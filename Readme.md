@@ -36,6 +36,9 @@ symfony console doctrine:migrations:execute --up 'DoctrineMigrations\Version2021
 ```
  docker-compose exec database /bin/bash
 ```
+# [Comandos mysql]
+select * from tipo_documento; <br>
+select * from documentos; <br>
 
 
 Molde Docker [https://www.twilio.com/blog/get-started-docker-symfony]
