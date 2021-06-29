@@ -22,16 +22,16 @@
         </thead>
         <tbody>
             
-        {% for documento in documentos %}
+        {% for doc in documents %}
             <tr>
-                <td>{{ documento.id }}</td>
-                <td>{{ documento.titulo }}</td>
-                <td>{{ documento.__toString }}</td>
-                <td> - </td>
+                <td>{{ doc.id }}</td>
+                <td>{{ doc.title }}</td>
+                <td>{{ doc.__toString }}</td>
+                <td>{{ doc.type }}</td>
                 <td>
-                    <a href="/documentos/{{ documento.id }}" class="btn btn-primary">Show</a>
-                    <a href="/documentos/edit/{{ documento.id }}" class="btn btn-secondary" data-id="{{ documento.id }}">Edit</a>
-                    <a href="#" class="btn btn-danger delete-documento" data-id="{{ documento.id }}">Delete</a>
+                    <a href="/documents/{{ doc.id }}" class="btn btn-primary">Show</a>
+                    <a href="/documents/edit/{{ doc.id }}" class="btn btn-secondary" data-id="{{ doc.id }}">Edit</a>
+                    <a href="#" class="btn btn-danger delete-documento" data-id="{{ doc.id }}">Delete</a>
                 </td>
             </tr>
         {% endfor %}

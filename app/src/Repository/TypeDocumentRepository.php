@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\TipoDocumento;
+use App\Entity\TypeDocument;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method TipoDocumento|null find($id, $lockMode = null, $lockVersion = null)
- * @method TipoDocumento|null findOneBy(array $criteria, array $orderBy = null)
- * @method TipoDocumento[]    findAll()
- * @method TipoDocumento[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method TypeDocument|null find($id, $lockMode = null, $lockVersion = null)
+ * @method TypeDocument|null findOneBy(array $criteria, array $orderBy = null)
+ * @method TypeDocument[]    findAll()
+ * @method TypeDocument[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class TipoDocumentoRepository extends ServiceEntityRepository
+class TypeDocumentRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, TipoDocumento::class);
+        parent::__construct($registry, TypeDocument::class);
     }
 
     // /**
-    //  * @return TipoDocumento[] Returns an array of TipoDocumento objects
+    //  * @return TypeDocument[] Returns an array of TypeDocument objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class TipoDocumentoRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?TipoDocumento
+    public function findOneBySomeField($value): ?TypeDocument
     {
         return $this->createQueryBuilder('t')
             ->andWhere('t.exampleField = :val')

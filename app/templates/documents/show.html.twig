@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+{% block title %}{{ document.title }}{% endblock %}
+
+{% block body %}
+    <h1>{{ document.title }}</h1>
+    <p>{{ document.type }}</p>
+    <hr>
+    <a href="/documents" class="">Voltar</a>
+{% endblock %}
